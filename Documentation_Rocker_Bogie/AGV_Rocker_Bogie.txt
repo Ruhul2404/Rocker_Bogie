@@ -1,0 +1,263 @@
+# (https://www.youtube.com/watch?v=dN1Ub864wks&list=PLkMYhICFMsGajeARsY7N1t1jhbtMb1poL)
+                                                                        Learning SolidWorks
+Downloading and initializing solid work.
+Learning solid work through tutorial by "Tutorials engineer"
+Tutorial 1
+    make 3D cads in 'part' section, bottom right of the page has matrix system.
+Tutorial 2
+    before drawing anything choose the plane(front ,top ,right) and select sketch toggle.
+    to draw a line choose sketch line from the top, bottom panel will show you the coordinates, right click select to end line
+    view sketch relation inside eye icon , to delete a relation right click delete
+Tutorial 3
+    when the line pen have a ring it makes an arc, smart dimension let you fix length/radius, without adding any dimension
+    got to display/delete relations >>full define sketch
+Tutorial 4
+    from top right of the window you can, extruded boss/base icon to see 3D model
+Tutorial 5
+    you can view my clicking mouse, or 3D view on top(normal mode to see original)
+
+# (https://www.youtube.com/watch?v=X_NhGME49gQ&t=3869s)
+                                                                   Making parts of Rocker Bogie
+Making of rocker bogie.
+front plane:
+    made a mid point line through origin of length 200mm(line 0)
+    made a right angle triangle with the 200mm side
+    draw a perpendicular from origin to one side of triangle
+    made a parallel line to line 0 connecting 2 sides of the triangle of length 80mm(line 1)
+    connect the vertex opposite to line 0 to 80mm line
+    draw 3 circles at both ends and mid point of line 0
+    made the 2 circles(end &mid) equal in diameter 40mm
+*fix the structure
+    made a frame of 10 mm around the line 1
+    made the small side(left) of the frame 27.5mm
+    difference between longer side of frame(right) and rear wheel be 19mm
+    connect the rear wheel with the frame by making offset entity
+    on the right side made a 5mm gap and make 2 2mm circles 5mm from mid line
+    made 2 3mm circles on mid of line 1 and perpendicular line to it 12mm from frame with 2mm offset entity
+    connect the circle to the frame (not perpendicular but 6mm apart)(circle 0)
+(test_image0.png)
+    made a circle of diameter 3mm at the point where bogie is connected(circle 1)
+*fix the structure
+    make frame of bogie of length 19mm and 10mm bi side by offset entity
+    connect bogie frame with the front 2 circles
+    made a 5mm gap on both side of bogie frame with 2 circle of 2mm diameter 5mm from mid line
+    made circle 1 covert entity
+*fix the structure
+(test_image1.png)
+    made a trapezium chassis of dimension 115mm to 10mm
+    connect the chassis with the circle at origin by making off set entity
+    made a straight slot of dimension 45mm X 9mm, 4mm from 115mm light of trapezium and collinear with circle 0
+*fix the structure
+(test_image2.png)
+(made a new folder 'Plan' keep sketch 1-4 there)
+    converted sketch 2 Rocker frame
+    trimmed it and extruded boss/base 3.45mm
+    Fillet 10mm radius its 4 major edges
+    Fillet 1.5mm other sharp edges, 0.2mm rest of the frame edges
+    changed the appearance plastic>>Medium Gloss>>black medium gloss plastic
+(test_image3.png)
+(made a copy of rocker and name it bogie)
+    delete boss and sketch 5, come back to plane
+(made a copy of bogie and name it platform base)
+    covert entity sketch 3(bogie), trim its internal lines and curves
+    extruded boss/base at 3.5mm
+    Fillet main edges 7.5mm, other 1.5mm, 0.2mm rest of the frame
+(test_image4.png)
+(open platform base)
+    make a new sketch covert sketch 4 (chassis)(sketch 5)
+    extruded boss/base 3.5mm
+    at the top make a connector rectangle of 18mmx10mm
+    thorough mid point made to circles of radius 2.5mm and 10mm apart and a vertical line made them symmetric
+    made mirror entity of this rectangle about a center line made perpendicular to cassis
+*fix the structure
+    extruded boss/base these rectangles 3.5mm
+    fillet main corner 2mm, socket edges 1mm, 0.2mm rest of the frame
+(test_image5.png)
+(made a new file platform as top view)
+    made a rectangle of 190mm x 100mm, made a co centric rectangle of 70mm x 50mm
+    made 4 circles at the vertices of small rectangle of 2.5mm
+    made a line 15mm from 100mm side of rectangle with a 2.5mm circle at center
+    made 2 circles of 3.5mm at the same horizon 10mm apart, 15mm from 190mm side and 43.5mm from center of rectangles
+    made a horizontal and vertical line about center and mirror image these pair of circles about them
+*fix the structure
+    extruded boss/base 50mm
+    fillet 4 vertices 5mm, 0,25mm rest of the frame
+(test_image6.png)
+(made a new file electronics and battery box as top view)
+    made a rectangle of 70mm x 50mm, made 4 circles of 2.5mm at the corners
+    made off set entity of the circles 1.5mm, connect 70mm circles by external lines
+    made a co centric 50mm x 60mm rectangle
+*fix the structure
+    made a new sketch covert & offset the small rectangle 1.5mm(reverse)
+*fix the structure
+    extruded boss/base 25mm
+    covert the bottom frame, extruded boss/base 1.50mm
+    covert the sketch and trim it
+    extruded boss/base 1.5mm
+    made a front plane sketch, made a line through center and a straight slot 10mm X 1.5mm, 20mm from the top mid & 7.5mm from mid lines
+    made an equal sized straight slot 4.5mm below the previous one
+    made a perpendicular line from the mid of middle line and mirror imaged straight slot at both the mutually perpendicular lines
+*fix the structure
+(test_image7.png)
+    extruded cut the new sketch up to the surface of the front face(direction 1), up to rear face (direction 2)
+    made a right plane sketch, made a 'L'(20mmx20mm) though the top mid with circle(3.5mm) at the end
+    mirror image the circle about vertical line
+*fix the structure
+    extruded cut the new sketch up to the surface of the front face(direction 1), up to rear face (direction 2)
+    fillet o.2mm all edges, change appearance black medium gloss plastic
+(test_image8.png)
+(made a new file central arm)
+    front plane: make a 3 sided rectangle 94mmx12mm, off set 1.50mm
+    connect the off set at the ends
+    extruded boss/base 3.5mm in both directions, made 2.5mm circle at the mid of top surface
+*fic the structure
+    extruded cut to the bottom surface
+    offset the circle 1mm, extruded boss/base 0.50mm
+    right plane: make a 3mm circle 8.5mm below the top
+*fix the structure
+     extruded cut the new sketch up to the surface of the front face(direction 1), up to rear face (direction 2)
+     fillet all edges 0.075mm
+(make a copy of rocker and named it motor mounting bracket, delete everything except the plan)
+    front plane: covert and off set inner wheel circle 1.75mm , made a parallel line at connectors of 16.50mm
+    connect this line to the circle 15mm and 12.5mm length lines, made a line through the center pf circle and mirror imaged, trimmed
+    covert the little circles at the top and hide the other sketches
+    extruded boss/base 2.75mm, extrude the circled 1mm behind
+    covert the inner circle and offset it 1mm
+*fix the structure
+    extruded the circle ring by 5mm
+    fillet major edges 1.5mm
+    covert and offset the 2 holes at the top by 1mm, extrude boss/base 1.25mm
+    made a 3.5mm hole at the center, covert this circle and ,made a co centric circle 6.9mm and extrude it 4.5mm
+    made a circle 1.25mm 7mm from the center of the previous circle
+    circular sketch pattern and made 3 circles from the center of previous circle
+*fix the structure
+    extrude these circles, fillet 0.1mm all the sides
+(test_image9.png)
+(made a new file motor)
+    front plan: made 4 concentric circles  20mm, 8mm, 5mm & 3mm
+*fix the structure
+    extrude boss/base 25mm, covert and extrude 8mm and 5mm circle 0.50mm
+    made a 3mm circle on the back side of cylinder and extruded it 0.5mm
+    right plane: make a straight slot 6mmx0.75mm 18.5mm from the left
+*fix the structure
+    extrude cut the slot off set 0.5mm
+    circular pattern make 30 similar slots equally spaced, made a cut of 5mm from the 3mm circled, fillet the circular boundary 0.5mm
+    front plane: made a circle 1.25mm 7mm from center, made 3 circles my circular patter on the plane
+*fix the structure
+    extruded cut 5mm, fillet 0.1mm all extruded boss/base, change appearance to brushed aluminum
+(test_image10.png)
+(made a new file motor shaft)
+    front page: made a 3mm circle and extrude it 25mm, fillet it 0.075mm, change appearance matt aluminum
+(made a new file wheel)
+    made a wheel of dimension 1.5mm, 6.5mm, 5mm & R15.5mm
+    wheel support with 9mm radius arc
+    revolve base/boss the wheel support
+    front plane: make a circle equal to the rim, and a co centric circle 8.5mm from the previous circle, symmetrically connect these circles at 50 degrees
+    trim the inner circle, made 5 circular pattern of the same
+*fix the structure
+    extruded cut the new sketch 10mm in both directions
+(test_image11.png)
+    right plane: outline the upper frame extended it 20mmx2.2mm, fillet all the 4 extended 0.5mm
+    revolved boss/base about central axis, fillet all the circular side 0.2mm and other 0.10mm
+*fixed the structure
+    extruded boss/base on the back side by a 3mm circle
+    change appearance black rubber gloss the tire
+(made a new file ball end)
+    front plane: made a 6mm circle, 11mm from origin, connect it with 1.5mm rod
+    revolve base/boss around the central axis, made a line 7.5mm from the base
+*fix the structure
+    curves split line on the ball socket, chamfer the base 0.05mm, appearance screw pattern
+    at the bottom make a circle and hexagon of 6mm
+    extrude boss/base 2mm, covert the 6mm circle and extrude cut it 2mm and 60 degrees, both sides of the nut
+    fillet the top of the rod 0.075mm
+(test_image12.png)
+(made a new file cavity)
+    top plane: make 3 co centric circles 8mm, 6mm & 4mm, extrude boss/base 1.875mm both sides
+    covert the 6mm circle and connect it via diameter and trimmed it, revolve the base about central axis
+    chamfer the body 0.1mm, change appearance brass polish
+(test_image13.png)
+(made a new file tie rod end)
+   top plane: made 3 co centric circles 10mm, 8mm & 4mm, connect it by a 15mm x 3mm rod
+*fix the structure
+   top plane: covert half the sketch and revolve boss/base about central axis
+   right plane: make a trapezium and fillet its edge 5mm 145 degree, mirror image it on both the sides 3.75mm apart
+*fix the structure
+   extruded cut 10mm on both the sides
+   top plane: covert the inner circle and extruded cut 10mm both sides, fillet 0.15mm
+   made a 3mm circle at the bottom and extruded cut it by 5mm
+   appearance edited screw pattern
+(test_image14.png)
+(made a new file tie rod)
+    front plane: made a tetra structure 60mmx1mmx9mmx2mm, fillet 5mm the corner
+    revolve boss/base about central axis
+    front plane: made vertical lines 8mm from the ends, chamfer the end circles by 0.075mm, appearance matt aluminum, edited screw pattern
+(test_image15.png)
+(made a new file tie rod nut)
+    top plane: made a circle 2mm & hexagon 4.5mm
+    extruded boss/base 1.75mm, extruded cut the top plane 1.75mm 60 degrees
+(test_image16.png)
+(made new file track)
+    top plane: made a rectangle 2400mmx225mm, extruded boss/base 10mm
+    made obstacle 125mmx175mm trapezium, extruded boss/base, copy the same on other side, appearance solid white
+(test_image17.png)
+(made a new folder fasteners for screw & nuts)
+(made a new file 3mm screw)
+   front plane: made 3mm circle extrude 11mm, off set the head extruded it 1.50mm
+   made a rectangle on top of width 0.6mm
+*fix the structure
+   extruded cut 0.5mm, chamfer the head 0.5mm
+   made a line 10mm from the bottom , split line the curve , appearance screw pattern
+(test_image18.png)
+(made a new file 3mm nut)
+(test_image19.png)
+(made a new file 2.5mm screw)
+(made a new file 2.5mm nut)
+(made a new file 2mm screw)
+(made a new file 2mm nut)
+
+# (https://www.youtube.com/watch?v=gKz1P_ilWDg)
+                                                                Assembling parts of Rocker Bogie
+(made a new file 2mm screw and nut)
+    insert 2mm screw and nut
+    fix the screw and float the nut make them co centric
+    mate the face of screw and nut 7.5mm, fix the nut
+(test_image20.png)
+(made a new file 2.5mm screw and nut)
+(made a new file 3mm screw and nut)
+(made a 1.25mm screw)
+(made a new file motor assembly)
+    insert motor, motor shaft & motor mounting bracket
+    fix motor mounting bracket, align the motor according to motor mounting bracket
+    coincide shaft to motor and bracket
+    insert 1.25mm screw, made 3 copies and insert them in bracket, mate them
+    insert 2mm screw and nut, connect them, fix everything
+(made a new file platform assembly)
+    insert central arm, electronic box and platform
+    fix the platform, connect central arm to it
+    connect the electronic box, insert 2.5mm screw and nut
+    connect screw at one corner mirror component along right plane, than front plane
+    fix everything except central arm
+(made new file Tie rod assembly)
+    insert ball end, cavity, tie rod end, tie rod & tie rod nut
+    fix the tie rod, connect tie rod end at one end and cavity inside tie rod end, ball end inside it
+    do the same for the other end both at 40mm, connect the screws
+    insert 3mm nut , fix them at 1.5mm (pre calculated) from the previous screw
+(made a new file left rocker bogie)
+    insert rocker, platform base & Bogie
+    fix the platform, connect the rocker, connect bogie to Rocker
+(made a new file right rocker bogie)
+   same as above
+(made a file Rocker bogie mechanism)(*Final File*)
+   insert platform assembly, align it
+   insert left rocker bogie, connect it
+   insert right rocker bogie, connect it
+   insert motor assembly, make 6 copy of it, connect them, place them in a folder name motor
+   insert 3mm screw and nuts, connect them to rocker bogie and platform
+**   insert tie rod assembly,
+   insert wheel, 9.25mm form the base & 5.25mm
+   insert track, fix the track, place rover over it,
+   made platform assembly float, made left & right rocker & tie rod assembly flexible
+
+# Motion study
+(test_image21.png)
+****************************************************************(FINAL VIDEO)*********************************************************
